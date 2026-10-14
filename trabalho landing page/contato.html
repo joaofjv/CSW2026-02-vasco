@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - João Vitor Vicente Gomes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>João Vitor</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="curriculo.html">Currículo</a>
+            <a href="github.html">GitHub</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="bloco">
+        <h2>Entre em Contato</h2>
+        <p>Preencha o formulário abaixo e eu retorno com um orçamento. É rápido e sem compromisso.</p>
+
+        <h3>Outras formas de contato</h3>
+        <p>📱 <strong>Telefone/WhatsApp:</strong> (27) 98837-6006</p>
+        <p>📷 <strong>Instagram:</strong> @joao.vvg</p>
+        <p>✉️ <strong>E-mail:</strong> joaoviana522@gmail.com</p>
+    </section>
+
+    <section class="bloco cinza">
+        <h2>Formulário de Contato</h2>
+
+        <form action="#" method="post">
+
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(27) 99999-9999" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+            <label for="tipoPessoa">Você é:</label>
+            <select id="tipoPessoa" name="tipoPessoa" required>
+                <option value="">Selecione...</option>
+                <option value="fisica">Pessoa Física</option>
+                <option value="juridica">Pessoa Jurídica</option>
+            </select>
+
+            <label for="horario">Melhor horário para contato:</label>
+            <select id="horario" name="horario" required>
+                <option value="">Selecione...</option>
+                <option value="manha">Manhã (08h - 12h)</option>
+                <option value="tarde">Tarde (12h - 18h)</option>
+                <option value="noite">Noite (18h - 21h)</option>
+            </select>
+
+            <label>Tipo de serviço:</label>
+            <div class="grupo-radio">
+                <label class="opcao"><input type="radio" name="servico" value="estatico1" required> Site Estático (1 a 2 páginas)</label>
+                <label class="opcao"><input type="radio" name="servico" value="estatico2"> Site Estático (3 a 5 páginas)</label>
+                <label class="opcao"><input type="radio" name="servico" value="estatico3"> Site Estático (mais de 5 páginas)</label>
+                <label class="opcao"><input type="radio" name="servico" value="dinamico"> Site Dinâmico</label>
+                <label class="opcao"><input type="radio" name="servico" value="avancado"> Site Avançado</label>
+            </div>
+
+            <label>Recursos que deseja (pode marcar vários):</label>
+            <div class="grupo-checkbox">
+                <label class="opcao"><input type="checkbox" name="recursos" value="formulario"> Formulário de contato</label>
+                <label class="opcao"><input type="checkbox" name="recursos" value="redes"> Integração com redes sociais</label>
+                <label class="opcao"><input type="checkbox" name="recursos" value="login"> Área de login</label>
+                <label class="opcao"><input type="checkbox" name="recursos" value="painel"> Painel administrativo</label>
+                <label class="opcao"><input type="checkbox" name="recursos" value="loja"> Loja virtual</label>
+            </div>
+
+            <label for="descricao">Descrição do que deseja contratar:</label>
+            <textarea id="descricao" name="descricao" rows="5" placeholder="Conte um pouco sobre o seu projeto, o que precisa, prazo, etc." required></textarea>
+
+            <label class="opcao" style="margin-top: 15px;">
+                <input type="checkbox" name="aceite" required> Aceito ser contactado por telefone ou e-mail.
+            </label>
+
+            <button type="submit" class="botao">Enviar</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>João Vitor Vicente Gomes - 2026</p>
+        <p>
+            📱 <a href="https://wa.me/5527988376006" target="_blank">(27) 98837-6006</a> |
+            📷 <a href="https://instagram.com/joao.vvg" target="_blank">@joao.vvg</a> |
+            💻 <a href="https://github.com/joaofjv" target="_blank">GitHub</a> |
+            ✉️ <a href="mailto:joaoviana522@gmail.com">E-mail</a>
+        </p>
+    </footer>
+
+</body>
+</html>
